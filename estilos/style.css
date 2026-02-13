@@ -9,8 +9,8 @@
   --fundo-principal: #f5f5f5;
   --texto: #222222;
   --texto-inverso: #ffffff;
-  --destaque: #a1b9fa;
-  --destaque-inverso: #c5fcfc;
+  --destaque: #7092f1;
+  --destaque-inverso: #c5e3fc;
   --fundo-card: #ffffff;
 }
 
@@ -48,4 +48,24 @@ nav#menu a {
 nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
+}
+
+main {
+
+}
+
+section#ficha {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  border-radius: 8px; 
+
+    img.foto{
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      object-fit: cover;
+      overflow: hidden;
+      border: 3px solid var(--fundo-card);
+      outline: 4px solid var(--destaque);
+    }
 }
