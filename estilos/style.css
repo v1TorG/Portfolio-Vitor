@@ -296,7 +296,7 @@ section#detalhes {
     max-width: 80%;
   }
   #projeto-container .foto{
-    max-width: 20%;
-    max-height: 500px;
+    max-width: 40%;
+    max-height: 200px;
   }
 }
