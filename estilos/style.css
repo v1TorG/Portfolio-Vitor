@@ -283,6 +283,25 @@ section#detalhes {
   color: var(--destaque);
 }
 
+footer{
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+  a{
+    color: var(--texto-inverso);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover{
+    color: var(--destaque-inverso);
+  }
+
+}
+
+
 @media screen and (min-width: 768px) {
   main {
     grid-template-columns: auto 80vw auto;
