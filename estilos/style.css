@@ -274,7 +274,7 @@ section#detalhes {
   font-weight: 600;
   color: var(--destaque-inverso);
   display: flex;
-  align-items: center;
+  
   justify-content: space-between;
   transition: color 0.3s ease;
 }
