@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,7 @@
   --fundo-card: #ffffff;
 }
 
-body{
+body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
   background-color: var(--fundo-principal);
@@ -61,133 +60,128 @@ main {
 section#ficha {
   background-color: var(--fundo-card);
   padding: 20px;
-  border-radius: 8px; 
+  border-radius: 8px;
   grid-column: 2;
 
-    img.foto{
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      overflow: hidden;
-      border: 5px solid var(--fundo-principal);
-      display: block;
-      margin: auto;
-      margin-bottom: 15px;
-    }
+  img.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 5px solid var(--fundo-principal);
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+  }
 
-    h1{
+  h1 {
+    color: var(--destaque);
+    margin: 15px 0;
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  div#social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    gap: 1em;
+    margin-top: 15px;
+
+    a {
       color: var(--destaque);
-      margin: 15px 0;
-      font-size: 1.8em;
-      text-align: center; 
+      transition: color 0.3s;
     }
 
-    div#social{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5em;
-      gap: 1em;
-      margin-top: 15px;
-
-      a{
-        color: var(--destaque);
-        transition: color 0.3s;
-      }
-
-      a:hover{
-        color: var(--destaque-inverso);
-      }
+    a:hover {
+      color: var(--destaque-inverso);
     }
+  }
 }
 
-section#detalhes{
+section#detalhes {
   grid-column: 2;
 
-  article{
+  article {
     background-color: var(--fundo-card);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
 
-    h2{
+    h2 {
       color: var(--destaque);
       margin-bottom: 19px;
     }
   }
 
-  #skill-container{
+  #skill-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
-    background-color: var(--fundo-principal) ;
+    background-color: var(--fundo-principal);
     padding: 25px;
     border-radius: 10px;
 
-    .info{
+    .info {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .nome{
+    .nome {
       font-weight: bold;
       color: var(--texto);
     }
 
-    .porcent{
+    .porcent {
       font-weight: bold;
       color: var(--destaque);
     }
 
-    .barra{
+    .barra {
       width: 100%;
       height: 9px;
       background-color: var(--fundo-card);
       border-radius: 4px;
     }
 
-    .progresso{
+    .progresso {
       height: 100%;
       background-color: var(--destaque-inverso);
       border-radius: 4px;
     }
-    
+
   }
 }
 
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: auto 80vw auto;
+.imgs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
   }
-
 }
 
-.imgs{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-
-        img {
-          border-radius: 50%;
-            width: 100px;
-            height: 100px;
-    }
-}
-
-#fomacao-container{
+#fomacao-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 
-  h3,p{
+  h3,
+  p {
     padding: 3px;
   }
-  .curso{
+
+  .curso {
     background-color: var(--fundo-principal);
     border-radius: 8px;
     border-left: 5px solid var(--destaque-inverso);
@@ -197,21 +191,112 @@ section#detalhes{
     transition: border-width 0.5s, border-color 9s;
   }
 
-  .curso:hover{
+  .curso:hover {
     border-left-width: 19px;
     cursor: pointer;
     border-color: var(--destaque);
   }
 
-  .periodo{
+  .periodo {
     color: var(--texto);
     font-size: 0.8em;
   }
 
-  .instituicao{
+  .instituicao {
     color: var(--destaque-inverso);
     font-size: 1.1em;
-    
+
   }
 
+}
+
+#projeto-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  .projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--fundo-principal);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque-inverso);
+    transition: border-width 0.5s, border-color 7s;
+
+    .foto {
+      border-radius: 8px;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    h3 {
+      color: var(--destaque);
+    }
+
+    p {
+      color: var(--texto);
+    }
+  }
+  .projeto:hover {
+    border-left-width: 19px;
+    cursor: pointer;
+    border-color: var(--destaque);
+  }
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--destaque-inverso);
+  color: var(--texto-inverso);
+  padding: 12px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background: var(--destaque);
+  color: var(--fundo-principal);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.descricao summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--destaque-inverso);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: color 0.3s ease;
+}
+
+.descricao summary:hover {
+  color: var(--destaque);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 80vw auto;
+  }
+
+  #projeto-container .projeto{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  #projeto-container .projeto-info{
+    max-width: 80%;
+  }
+  #projeto-container .foto{
+    max-width: 20%;
+    max-height: 500px;
+  }
 }
