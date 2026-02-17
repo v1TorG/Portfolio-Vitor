@@ -36,7 +36,6 @@ header {
   background-color: var(--destaque);
   color: var(--texto);
   padding: 10px;
-  padding-right: 5%;
   display: flex;
   justify-content: flex-end;
   align-content: center;
