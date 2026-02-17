@@ -35,7 +35,6 @@ header {
 nav#menu ul {
   list-style: none;
   display: flex;
-  gap: 10px;
 }
 
 nav#menu a {
@@ -302,11 +301,66 @@ footer{
   }
 
 }
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #1b42a5;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #c8e5ff;
+    transition: 0.2s;
+    color: #163991;
+}
 
 
-@media screen and (min-width: 768px) {
-  main {
+.bt {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.bnt {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.bnt img {
+    border-radius: 20%;
+    width: 70px;
+    height: 70px;
+}
+.bnt:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+@media screen and (min-width: 1000px) {
+  /*main {
     grid-template-columns: auto 80vw auto;
+  }*/
+  main{
+    grid-template-columns: auto 400px 1fr auto;
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  section#detalhes {
+    grid-column: 3 / 4;
   }
 
   #projeto-container .projeto{
@@ -321,3 +375,4 @@ footer{
     max-height: 300px;
   }
 }
+
