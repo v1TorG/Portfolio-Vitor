@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&family=Press+Start+2P&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +16,7 @@
 }
 
 body.escuro {
-  --fundo-principal: #222222;
+  --fundo-principal: #181b20;
   --texto: #dfe6e4;
   --texto-inverso: #413e3e;
   --destaque: #81abf8;
@@ -89,8 +91,9 @@ section#ficha {
   h1 {
     color: var(--destaque);
     margin: 15px 0;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-align: center;
+    font-family: "Press Start 2P", system-ui;
   }
 
   div#social {
