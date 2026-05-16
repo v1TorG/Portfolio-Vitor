@@ -7,21 +7,23 @@
 }
 
 :root {
-  --fundo-principal: #dfe6e4;
+  --fundo-principal: #bad1da;
   --texto: #222222;
   --texto-inverso: #ffffff;
   --destaque: #0f2050;
   --destaque-inverso: #408bc9;
-  --fundo-card: #ffffff;
+  --fundo-card: #edf6fa;
+  --cabecalho: #7daffa;
 }
 
 body.escuro {
   --fundo-principal: #181b20;
   --texto: #dfe6e4;
   --texto-inverso: #413e3e;
-  --destaque: #81abf8;
-  --destaque-inverso: #40a5f7;
-  --fundo-card: #333333;
+  --destaque: #7daffa;
+  --destaque-inverso: #40bdf7;
+  --fundo-card: #010711;
+  --cabecalho: #0f2050;
 }
 
 body {
@@ -30,10 +32,13 @@ body {
   background-color: var(--fundo-principal);
   color: var(--texto);
   transition: background-color 0.5s, color 0.2s;
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../imagens/fnd.png");
 }
 
 header {
-  background-color: var(--destaque);
+  background-color: var(--cabecalho);
   color: var(--texto);
   padding: 10px;
   display: flex;
@@ -50,7 +55,7 @@ nav#menu ul {
 
 nav#menu a {
   text-decoration: none;
-  color: var(--texto-inverso);
+  color: var(--destaque);
   font-weight: 600;
   padding: 12px 15px;
   border-radius: 5px;
@@ -58,8 +63,8 @@ nav#menu a {
 }
 
 nav#menu a:hover {
-  background-color: var(--destaque-inverso);
-  color: var(--destaque);
+  background-color: var(--fundo-card);
+  color: var(--destaque-inverso);
 }
 
 main {
@@ -229,6 +234,7 @@ section#detalhes {
   flex-direction: column;
 
   .projeto {
+
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -297,7 +303,7 @@ section#detalhes {
 }
 
 footer{
-  background-color: var(--destaque);
+  background-color: var(--cabecalho);
   color: var(--texto-inverso);
   text-align: center;
   padding: 15px;
@@ -380,7 +386,7 @@ footer{
     justify-content: space-between;
   }
   #projeto-container .projeto-info{
-    max-width: 80%;
+    max-width: 60%;
   }
   #projeto-container .foto{
     max-width: 40%;
